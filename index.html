@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOD OF WAR</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já viu ou jogou god of war ?</h2>
+    <p class="banner__texto">Encontre qual quer jogo da franquia!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será a proxima aventura de kratos?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/chainsofolimpo.jpg"
+            alt="Livro sobre como aconteceu o god of war chains of olympus"></div>
+        <div class="swiper-slide"><img src="img/god of war acension.jpg"
+            alt="Continuação da historia de Kratos o GOST OF SPARTA"></div>
+        <div class="swiper-slide"><img src="img/god of war gost.png" alt="Livro sobre como kratos perdeu tudo e ganhou tão pouco">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/god of war2i.webp" alt="Livro sobre o inicio de um novo objetivo" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/god of war3.jpg" alt="O fim do olympus está proximo" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/god of war 41.jpg" alt="GOST OF SPARTA tem uma nova jornada" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">...</h3>
+          <h2 class="descrição__titulo-livro">Essa e a historia de Kratos desda sua perda e raiva imensuravel até a sua busca pela paz.</h2>
+          <p class="descrição__texto">
+            "O matador de Deuses não encontrou a sua paz tão desejada"
+          </p>
+        </div>
+        <img src="img/simbolo god.jpeg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/simbolo god.jpeg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            .svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/Alecto.webp"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/Thanatos.webp" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="img/clotho.webp" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="img/Zeus_-_.webp" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/baldur.webp" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="img/thor.webp" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/simbolo god.jpeg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Melhor Jogo do Ano</h3>
+          <h2 class="descrição__titulo-livro"> David Jaffe</h2>
+          <p class="descrição__texto">Criador da franquia GOD OF WAR.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/David Jaffe.jpeg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PSP</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PLAYSTATION 2</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PLAYSTATION 3</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PLAYSTATION 4</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PLAYSTATION 5</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">CODIGOS PRA DESBLOQUEAR TUDO</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">DICAS</a>
+      </li>
+    </ul>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
